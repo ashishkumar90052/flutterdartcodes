@@ -1,5 +1,4 @@
 import 'package:dynamic_color/dynamic_color.dart';
-import 'package:dynamicapp/dialog.dart';
 import 'package:dynamicapp/home/home.dart';
 import 'package:dynamicapp/models/cart.dart';
 import 'package:dynamicapp/models/catalog.dart';
@@ -7,6 +6,7 @@ import 'package:dynamicapp/screens/cart.dart';
 import 'package:dynamicapp/screens/catalog.dart';
 import 'package:dynamicapp/screens/login.dart';
 import 'package:dynamicapp/theme/apptheme.dart';
+import 'package:dynamicapp/travel/travel.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
@@ -35,38 +35,15 @@ class MyApp extends StatelessWidget {
             ),
           ],
           child: MaterialApp(
-            title: 'Flutter Demo',
-            debugShowCheckedModeBanner: false,
-            theme: AppTheme.lightTheme(lightColorScheme),
-            darkTheme: AppTheme.darkTheme(darkColorScheme),
-            // routerConfig: router(),
+              title: 'Flutter Demo',
+              debugShowCheckedModeBanner: false,
+              theme: AppTheme.lightTheme(lightColorScheme),
+              darkTheme: AppTheme.darkTheme(darkColorScheme),
+              // routerConfig: router(),
 
-            home: const Dialogs(),
-          ));
+              home: const TravelApp()));
     });
   }
-}
-
-GoRouter router() {
-  return GoRouter(
-    initialLocation: '/login',
-    routes: [
-      GoRoute(
-        path: '/login',
-        builder: (context, state) => const MyLogin(),
-      ),
-      GoRoute(
-        path: '/catalog',
-        builder: (context, state) => const MyCatalog(),
-        routes: [
-          GoRoute(
-            path: 'cart',
-            builder: (context, state) => const MyCart(),
-          ),
-        ],
-      ),
-    ],
-  );
 }
 
 class MyHomePage extends StatefulWidget {
@@ -121,6 +98,28 @@ class _MyHomePageState extends State<MyHomePage> {
       ][currentPageIndex],
     );
   }
+}
+
+GoRouter router() {
+  return GoRouter(
+    initialLocation: '/login',
+    routes: [
+      GoRoute(
+        path: '/login',
+        builder: (context, state) => const MyLogin(),
+      ),
+      GoRoute(
+        path: '/catalog',
+        builder: (context, state) => const MyCatalog(),
+        routes: [
+          GoRoute(
+            path: 'cart',
+            builder: (context, state) => const MyCart(),
+          ),
+        ],
+      ),
+    ],
+  );
 }
 
 //flutter array?

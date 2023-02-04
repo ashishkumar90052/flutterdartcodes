@@ -31,7 +31,7 @@ class _HomeDetailsState extends State<HomeDetails> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(widget.name,
-                      style: Theme.of(context).textTheme.headline5),
+                      style: Theme.of(context).textTheme.headlineSmall),
                   const SizedBox(height: 16.0),
                   Text(widget.userName),
                   const SizedBox(height: 8.0),

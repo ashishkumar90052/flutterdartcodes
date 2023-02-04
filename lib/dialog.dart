@@ -222,7 +222,7 @@ class DialogsState extends State<Dialogs> {
                         children: <Widget>[
                           Text(
                             'Form Data',
-                            style: Theme.of(context).textTheme.headline6,
+                            style: Theme.of(context).textTheme.titleLarge,
                           ),
                           const SizedBox(
                             height: 10,
@@ -305,6 +305,7 @@ class DialogsState extends State<Dialogs> {
                     barrierColor: Colors.purple[900]?.withOpacity(0.54),
                   ).show();
 
+                  // ignore: use_build_context_synchronously
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text('Dismissed by $dismissMode'),
