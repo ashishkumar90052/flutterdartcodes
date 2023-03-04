@@ -34,6 +34,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	   <key>NSCalendarsUsageDescription</key>
+      <string>$(PRODUCT_NAME) calendar events</string>
+    <key>NSRemindersUsageDescription</key>
+      <string>$(PRODUCT_NAME) reminder use</string>
+    <key>NSCameraUsageDescription</key>
+      <string>This app requires to access your photo library to show image on profile and send via chat</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+	<string>This app requires access to the photo library.</string>
+
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>This app requires read and write access to the photo library.</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

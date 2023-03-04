@@ -43,6 +43,8 @@ dependencies:
   motion_toast: ^2.6.4
   blinking_text: ^1.0.2
   awesome_dialog: ^3.0.2
+  image_picker: ^0.8.6+3
+  video_player: ^2.5.2
 
 dev_dependencies:
   flutter_test:
