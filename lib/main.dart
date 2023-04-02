@@ -1,21 +1,14 @@
 import 'package:dynamic_color/dynamic_color.dart';
-import 'package:dynamicapp/card.dart';
 import 'package:dynamicapp/food/food.dart';
 import 'package:dynamicapp/home/home.dart';
-import 'package:dynamicapp/image/imgage_picker.dart';
-import 'package:dynamicapp/login/calculator.dart';
 import 'package:dynamicapp/models/cart.dart';
 import 'package:dynamicapp/models/catalog.dart';
 import 'package:dynamicapp/screens/cart.dart';
 import 'package:dynamicapp/screens/catalog.dart';
 import 'package:dynamicapp/screens/login.dart';
-import 'package:dynamicapp/switch/switch.dart';
-import 'package:dynamicapp/travel/travel.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-
-import 'login/login.dart';
 
 void main() {
   runApp(const MyApp());

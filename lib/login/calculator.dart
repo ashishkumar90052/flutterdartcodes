@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
-
 class Calculator extends StatefulWidget {
+  const Calculator({super.key});
+
   @override
-  _CalculatorState createState() => _CalculatorState();
+  CalculatorState createState() => CalculatorState();
 }
 
-class _CalculatorState extends State<Calculator> {
+class CalculatorState extends State<Calculator> {
   String _output = "0";
   String _expression = "";
 
@@ -44,72 +45,70 @@ class _CalculatorState extends State<Calculator> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Calculator"),
+          title: const Text("Calculator"),
           centerTitle: true,
         ),
-        body: Container(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: <Widget>[
-              Expanded(
-                child: Container(
-                  padding: EdgeInsets.all(10),
-                  alignment: Alignment.bottomRight,
-                  child: Text(
-                    _output,
-                    style: TextStyle(
-                      fontSize: 60,
-                      fontWeight: FontWeight.bold,
-                    ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                alignment: Alignment.bottomRight,
+                child: Text(
+                  _output,
+                  style: const TextStyle(
+                    fontSize: 60,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  _buildButton("C"),
-                  _buildButton("⌫"),
-                  _buildButton("%"),
-                  _buildButton("÷"),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  _buildButton("7"),
-                  _buildButton("8"),
-                  _buildButton("9"),
-                  _buildButton("×"),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  _buildButton("4"),
-                  _buildButton("5"),
-                  _buildButton("6"),
-                  _buildButton("-"),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  _buildButton("1"),
-                  _buildButton("2"),
-                  _buildButton("3"),
-                  _buildButton("+"),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-                  _buildButton("0"),
-                  _buildButton("."),
-                  _buildButton("="),
-                ],
-              ),
-            ],
-          ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                _buildButton("C"),
+                _buildButton("⌫"),
+                _buildButton("%"),
+                _buildButton("÷"),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                _buildButton("7"),
+                _buildButton("8"),
+                _buildButton("9"),
+                _buildButton("×"),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                _buildButton("4"),
+                _buildButton("5"),
+                _buildButton("6"),
+                _buildButton("-"),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                _buildButton("1"),
+                _buildButton("2"),
+                _buildButton("3"),
+                _buildButton("+"),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                _buildButton("0"),
+                _buildButton("."),
+                _buildButton("="),
+              ],
+            ),
+          ],
         ),
       ),
     );
@@ -118,13 +117,13 @@ class _CalculatorState extends State<Calculator> {
   Widget _buildButton(String buttonText) {
     return Expanded(
       child: Container(
-        margin: EdgeInsets.all(5),
+        margin: const EdgeInsets.all(5),
         child: MaterialButton(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           onPressed: () => _buttonPressed(buttonText),
           child: Text(
             buttonText,
-            style: TextStyle(fontSize: 28),
+            style: const TextStyle(fontSize: 28),
           ),
         ),
       ),
