@@ -1,5 +1,6 @@
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:dynamicapp/card.dart';
+import 'package:dynamicapp/food/food.dart';
 import 'package:dynamicapp/home/home.dart';
 import 'package:dynamicapp/image/imgage_picker.dart';
 import 'package:dynamicapp/login/calculator.dart';
@@ -48,7 +49,7 @@ class MyApp extends StatelessWidget {
               // darkTheme: AppTheme.darkTheme(darkColorScheme),
               // routerConfig: router(),
 
-              home:const  ImagePickers()));
+              home: const Food()));
     });
   }
 }
