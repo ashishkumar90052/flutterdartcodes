@@ -45,6 +45,8 @@ dependencies:
   awesome_dialog: ^3.0.2
   image_picker: ^0.8.6+3
   video_player: ^2.5.2
+  shimmer: ^2.0.0
+
 
 dev_dependencies:
   flutter_test:
