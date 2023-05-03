@@ -56,6 +56,7 @@
 
 import 'package:dynamicapp/animation/fade_scale_transition.dart';
 import 'package:dynamicapp/animation/shared_axis_transition.dart.dart';
+import 'package:dynamicapp/speed_dial/speed_dial.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'animation/container_transition.dart';
@@ -75,7 +76,7 @@ void main() {
           },
         ),
       ),
-      home: TransitionsHomePage(),
+      home: const MyApp(),
     ),
   );
 }

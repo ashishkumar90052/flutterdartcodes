@@ -48,6 +48,7 @@ dependencies:
   shimmer: ^2.0.0
   ticket_widget: ^0.0.1
   animations:
+  flutter_speed_dial: ^6.2.0
 
 
 dev_dependencies:
