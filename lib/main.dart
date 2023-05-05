@@ -56,9 +56,9 @@
 
 import 'package:dynamicapp/animation/fade_scale_transition.dart';
 import 'package:dynamicapp/animation/shared_axis_transition.dart.dart';
-import 'package:dynamicapp/speed_dial/speed_dial.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'allscreens/1.tab_bar.dart';
 import 'animation/container_transition.dart';
 import 'animation/fade_through_transition.dart';
 
@@ -66,17 +66,21 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.from(
+      themeMode: ThemeMode.dark,
+      theme: ThemeData.dark(
         useMaterial3: true,
-        colorScheme: const ColorScheme.light(),
+
+        // colorSchemeSeed: Colors.deepOrange,
+        // colorScheme: const ColorScheme.dark(),
       ).copyWith(
+        useMaterial3: true,
         pageTransitionsTheme: const PageTransitionsTheme(
           builders: <TargetPlatform, PageTransitionsBuilder>{
             TargetPlatform.android: ZoomPageTransitionsBuilder(),
           },
         ),
       ),
-      home: const MyApp(),
+      home: const Tabbar(),
     ),
   );
 }

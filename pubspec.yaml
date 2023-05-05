@@ -49,6 +49,8 @@ dependencies:
   ticket_widget: ^0.0.1
   animations:
   flutter_speed_dial: ^6.2.0
+  share_plus: ^6.3.4
+  dio: ^5.1.1
 
 
 dev_dependencies:
