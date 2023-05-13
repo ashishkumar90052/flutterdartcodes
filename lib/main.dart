@@ -54,11 +54,16 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
+import 'package:dynamicapp/allscreens/4.profile.dart';
+import 'package:dynamicapp/allscreens/5.bottom_app_bar.dart';
+import 'package:dynamicapp/allscreens/6.razor_pay.dart';
+import 'package:dynamicapp/allscreens/7.music.dart';
 import 'package:dynamicapp/animation/fade_scale_transition.dart';
 import 'package:dynamicapp/animation/shared_axis_transition.dart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'allscreens/2.spotify_ui.dart';
+import 'allscreens/todo.dart';
 import 'animation/container_transition.dart';
 import 'animation/fade_through_transition.dart';
 
@@ -66,19 +71,22 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.light,
+      darkTheme: ThemeData.dark(
+        useMaterial3: true,
+      ),
       theme: ThemeData(
         useMaterial3: true,
-        colorSchemeSeed: Colors.green,
+        colorSchemeSeed: Colors.white,
         // colorScheme: const ColorScheme.dark(),
       ).copyWith(
-        useMaterial3: true,
         pageTransitionsTheme: const PageTransitionsTheme(
           builders: <TargetPlatform, PageTransitionsBuilder>{
             TargetPlatform.android: ZoomPageTransitionsBuilder(),
           },
         ),
       ),
-      home: const SpotifyUI(),
+      home: Music(),
     ),
   );
 }
