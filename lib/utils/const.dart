@@ -212,4 +212,27 @@ List<Map> newMusicList = [
     'img':
         'https://m.media-amazon.com/images/M/MV5BZDQ2NzU2MTMtODRlMi00N2I5LThhYmItYWMwODg3MmZiYTJjXkEyXkFqcGdeQXVyMTEyOTYzMjQw._V1_.jpg'
   },
+  {
+    'title': 'Jungle Baby',
+    'subtitle': 'Jungle Baby',
+    'img':
+        'https://media1.metrotimes.com/metrotimes/imager/u/zoom/29143520/2-sterlgotti-brokenheart.jpg?cb=1647990305'
+  },
+  {
+    'title': 'All the Right Movers',
+    'subtitle': 'Waking up 2009',
+    'img':
+        'https://radio.callmefred.com/en/wp-content/uploads/2023/05/final_cover-All-The-Right-Moves-OneRepublic.jpg'
+  },
+  {
+    'title': 'Lose Somebody',
+    'subtitle': 'Lose Somebody',
+    'img': 'https://i.scdn.co/image/ab67616d0000b273a74e171f9cd70573a3e25576'
+  },
+  {
+    'title': 'Woofer',
+    'subtitle': 'Woofer',
+    'img':
+        'https://m.media-amazon.com/images/M/MV5BZDQ2NzU2MTMtODRlMi00N2I5LThhYmItYWMwODg3MmZiYTJjXkEyXkFqcGdeQXVyMTEyOTYzMjQw._V1_.jpg'
+  },
 ];
