@@ -16,6 +16,26 @@ class _TabbarState extends State<Tabbar> {
   List<dynamic> userdata = [];
   var apiURL = 'https://jsonplaceholder.typicode.com/todos/1/users';
   Future<void> getUserData() async {
+
+     Dio dio = Dio();
+
+    // Set the base URL of the API.
+
+    // Create the request data.
+    Map<String, String> data = {
+      'name': 'John Doe',
+      'email': 'johndoe@example.com',
+    };
+
+    // Make the POST request.
+    Response response = await dio.post('/users', data: data);
+
+    // Check the response status code.
+    if (response.statusCode == 201) {
+      // The request was successful.
+    } else {
+      // The request failed.
+    }
     try {
       var response = await dio.get(apiURL);
       if (response.statusCode == 200) {

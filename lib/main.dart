@@ -54,17 +54,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:dynamicapp/allscreens/1.tab_bar.dart';
-import 'package:dynamicapp/allscreens/11.%20neu.dart';
-import 'package:dynamicapp/allscreens/12.search_bar.dart';
-import 'package:dynamicapp/allscreens/2.spotify_ui.dart';
-import 'package:dynamicapp/allscreens/6.razor_pay.dart';
+import 'package:dynamicapp/allscreens/16.radial.dart';
 import 'package:flutter/material.dart';
-import 'package:razorpay_flutter/razorpay_flutter.dart';
-import 'package:showcaseview/showcaseview.dart';
-
-import 'allscreens/12.search_bardart';
-import 'allscreens/9.showcase.dart';
 
 void main() {
   runApp(
@@ -76,7 +67,6 @@ void main() {
         ),
         theme: ThemeData.dark(
           useMaterial3: true,
-          // colorSchemeSeed: Colors.orange,
           // colorScheme: const ColorScheme.dark(),
         ).copyWith(
           pageTransitionsTheme: const PageTransitionsTheme(
@@ -85,6 +75,6 @@ void main() {
             },
           ),
         ),
-        home: SearchBars()),
+        home: const RadialMenu()),
   );
 }

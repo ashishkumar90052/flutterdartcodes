@@ -181,22 +181,22 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                         const SizedBox(height: 8.0),
-                        Row(
+                        const Row(
                           children: [
-                            const Text(
+                            Text(
                               '18 lessons',
                               style: TextStyle(
                                   color: Colors.pink,
                                   fontWeight: FontWeight.w700),
                             ),
-                            const SizedBox(width: 8),
-                            const Icon(
+                            SizedBox(width: 8),
+                            Icon(
                               Icons.circle,
                               size: 5,
                               color: Colors.pink,
                             ),
-                            const SizedBox(width: 8),
-                            const Text(
+                            SizedBox(width: 8),
+                            Text(
                               '50% completed',
                               style: TextStyle(
                                   color: Colors.pink,
@@ -268,8 +268,8 @@ class _HomeState extends State<Home> {
                                 width: 250,
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 8.0),
-                                child: Row(
-                                  children: const [
+                                child: const Row(
+                                  children: [
                                     Icon(Icons.restore, color: Colors.black54),
                                     SizedBox(width: 8.0),
                                     Expanded(

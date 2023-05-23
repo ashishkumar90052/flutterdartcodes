@@ -63,6 +63,9 @@ dependencies:
   showcaseview: ^2.0.3
   google_fonts: ^4.0.4
   neubrutalism_ui: ^1.0.0
+  flutter_staggered_animations: ^1.0.0
+  flutter_rating_bar: ^4.0.1
+
 
 
 dev_dependencies:

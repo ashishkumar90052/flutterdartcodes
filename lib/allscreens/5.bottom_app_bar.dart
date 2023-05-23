@@ -96,6 +96,7 @@ class _BottomAppBarUIState extends State<BottomAppBarUI> {
   }
 }
 
+// ignore: must_be_immutable
 class Like extends StatefulWidget {
   bool isLiked;
   Like({super.key, required this.isLiked});

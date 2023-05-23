@@ -104,8 +104,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ],
               ),
               const SizedBox(height: 32),
-               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 48.0),
+               const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 48.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -113,7 +113,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     Flexible(
                         child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      children: const [
+                      children: [
                         Text(
                           '80',
                           style: TextStyle(
@@ -122,11 +122,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         Text('Posts'),
                       ],
                     )),
-                    const SizedBox(width: 16.0),
+                    SizedBox(width: 16.0),
                     Flexible(
                         child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      children: const [
+                      children: [
                         Text(
                           '320',
                           style: TextStyle(
@@ -135,11 +135,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         Text('Followers'),
                       ],
                     )),
-                    const SizedBox(width: 16.0),
+                    SizedBox(width: 16.0),
                     Flexible(
                         child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      children: const [
+                      children: [
                         Text(
                           '220',
                           style: TextStyle(
