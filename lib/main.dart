@@ -54,8 +54,9 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:dynamicapp/allscreens/16.radial.dart';
 import 'package:flutter/material.dart';
+
+import 'allscreens/19.img_background.dart';
 
 void main() {
   runApp(
@@ -75,6 +76,6 @@ void main() {
             },
           ),
         ),
-        home: const RadialMenu()),
+        home: const MyImgBack()),
   );
 }
