@@ -65,6 +65,7 @@ dependencies:
   neubrutalism_ui: ^1.0.0
   flutter_staggered_animations: ^1.0.0
   flutter_rating_bar: ^4.0.1
+  flip_card: ^0.7.0
 
 
 
