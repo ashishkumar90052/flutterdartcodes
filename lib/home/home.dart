@@ -13,6 +13,6 @@ class _HomeState extends State<Home> {
     return Scaffold(
         drawer: const Drawer(),
         appBar: AppBar(title: const Text('Welcome Back')),
-        body: const Column(children: []));
+        body: Column(children: const []));
   }
 }
