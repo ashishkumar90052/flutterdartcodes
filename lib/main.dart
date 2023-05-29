@@ -1,4 +1,3 @@
-import 'package:dynamicapp/allscreens/11.%20neu.dart';
 import 'package:dynamicapp/ui_compare/1.gropup_option.dart';
 import 'package:flutter/material.dart';
 
