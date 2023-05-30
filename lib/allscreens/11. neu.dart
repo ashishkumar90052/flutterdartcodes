@@ -1,4 +1,5 @@
 import 'package:dynamicapp/utils/const.dart';
+import 'package:dynamicapp/utils/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:neubrutalism_ui/neubrutalism_ui.dart';
 
@@ -13,15 +14,14 @@ class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      // backgroundColor: Colors.amber[50],
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
             height: MediaQuery.of(context).size.height * .55,
-            child: Image.network(
-              'https://i.pinimg.com/originals/67/60/90/6760900d6e002a489f5a9b43cf3c280f.gif',
-              // 'https://i.pinimg.com/originals/3d/81/0d/3d810d38b17a3d5d6b39874285b83a35.gif',
+            child: Image.asset(
+              'assets/splash.png',
               fit: BoxFit.cover,
             ),
           ),
@@ -46,30 +46,144 @@ class _SplashState extends State<Splash> {
         ],
       ),
       bottomNavigationBar: SafeArea(
+        bottom: false,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: NeuTextButton(
-            buttonHeight: 50,
-            buttonColor: Colors.pink,
+            buttonHeight: 55,
+            buttonColor: const Color(0xffd744b8),
             borderColor: Colors.black,
             shadowColor: Colors.black,
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(8),
             buttonWidth: MediaQuery.of(context).size.width * 0.5,
             child: const Center(
               child: Padding(
                 padding: EdgeInsets.all(8.0),
                 child: Text(
                   "Start Learning",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                  style: TextStyle(
+                      fontSize: 20, fontWeight: FontWeight.w600, color: kWhite),
                 ),
               ),
             ),
             onPressed: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => const Home()));
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const BottomNavigationBarExampleApp()));
             },
           ),
         ),
+      ),
+    );
+  }
+}
+
+class BottomNavigationBarExampleApp extends StatelessWidget {
+  const BottomNavigationBarExampleApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const BottomNavigationBarExample();
+  }
+}
+
+class BottomNavigationBarExample extends StatefulWidget {
+  const BottomNavigationBarExample({super.key});
+
+  @override
+  State<BottomNavigationBarExample> createState() =>
+      _BottomNavigationBarExampleState();
+}
+
+class _BottomNavigationBarExampleState
+    extends State<BottomNavigationBarExample> {
+  int _selectedIndex = 0;
+  static const TextStyle optionStyle =
+      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+  static const List<Widget> _widgetOptions = <Widget>[
+    Home(),
+    Text(
+      'Index 1: Business',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 2: School',
+      style: optionStyle,
+    ),
+  ];
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: _widgetOptions.elementAt(_selectedIndex),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: _selectedIndex != 0
+                ? const Icon(Icons.home_filled,
+                    size: 32, color: Color.fromARGB(255, 96, 36, 84))
+                : NeuIconButton(
+                    buttonHeight: 45.0,
+                    borderRadius: BorderRadius.circular(8),
+                    buttonColor: _selectedIndex == 0
+                        ? const Color(0xffd744b8)
+                        : Colors.white,
+                    icon: Icon(
+                      Icons.home_filled,
+                      color: _selectedIndex == 0
+                          ? const Color(0xff650452)
+                          : kBlack,
+                    )),
+
+            // Icon(Icons.home),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: _selectedIndex != 1
+                ? const Icon(Icons.bookmark_outline,
+                    size: 32, color: Color.fromARGB(255, 96, 36, 84))
+                : NeuIconButton(
+                    buttonHeight: 45,
+                    borderRadius: BorderRadius.circular(8),
+                    buttonColor: _selectedIndex == 1
+                        ? const Color(0xffd744b8)
+                        : Colors.white,
+                    icon: Icon(
+                      Icons.bookmark_rounded,
+                      color: _selectedIndex == 1
+                          ? const Color(0xff650452)
+                          : kBlack,
+                    )),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: _selectedIndex != 2
+                ? const Icon(Icons.person_2_outlined,
+                    size: 32, color: Color.fromARGB(255, 96, 36, 84))
+                : NeuIconButton(
+                    buttonHeight: 45,
+                    borderRadius: BorderRadius.circular(8),
+                    buttonColor: _selectedIndex == 2
+                        ? const Color(0xffd744b8)
+                        : Colors.white,
+                    icon: Icon(
+                      Icons.person_2_rounded,
+                      color: _selectedIndex == 2
+                          ? const Color(0xff650452)
+                          : kBlack,
+                    )),
+            label: '',
+          ),
+        ],
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
       ),
     );
   }
@@ -86,36 +200,30 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      // appBar: AppBar(
-      //   leading: NeuIconButton(icon: Icon(Icons.menu)),
-      //   title: NeuSearchBar(searchBarColor: Colors.amber),
-      //   // actions: [
-      //   //   NeuIconButton(icon: Icon(Icons.add)),
-      //   // ],
-      // ),
+      backgroundColor: kWhite,
       body: SafeArea(
+        bottom: false,
         child: SingleChildScrollView(
           child: Column(
             children: [
               ListTile(
                 title: const Text(
-                  'Hi, Ashish',
+                  'Hi, Flutterdartcode',
                   style: TextStyle(fontSize: 25, fontWeight: FontWeight.w900),
                 ),
                 subtitle: const Text('Become a better worker today'),
-                trailing: NeuIconButton(
-                    buttonColor: Colors.pink,
-                    borderRadius: BorderRadius.circular(16),
-                    icon: const Icon(
-                      Icons.account_circle,
-                      color: Colors.black,
-                    )),
+                trailing: NeuContainer(
+                  height: 50,
+                  width: 50,
+                  borderWidth: .5,
+                  borderRadius: BorderRadius.circular(4),
+                  child: Image.asset('assets/user 2.png'),
+                ),
               ),
               const SizedBox(height: 16.0),
               ListTile(
                 title: NeuSearchBar(
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(8),
                   searchBarColor: Colors.white,
                   hintText: 'What are you looking for',
                   searchBarIcon: const Icon(
@@ -125,10 +233,10 @@ class _HomeState extends State<Home> {
                   hintStyle: const TextStyle(color: Colors.black),
                 ),
                 trailing: NeuIconButton(
-                    borderRadius: BorderRadius.circular(16),
+                    borderRadius: BorderRadius.circular(8),
                     buttonColor: Colors.white,
                     icon: const Icon(
-                      Icons.filter_alt,
+                      Icons.filter_alt_rounded,
                       color: Colors.black,
                     )),
               ),
@@ -142,7 +250,7 @@ class _HomeState extends State<Home> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: NeuContainer(
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(8),
                   color: Colors.white,
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
@@ -151,10 +259,13 @@ class _HomeState extends State<Home> {
                       children: [
                         Row(
                           children: [
-                            NeuIconButton(
-                                buttonColor: Colors.pink,
-                                borderRadius: BorderRadius.circular(16),
-                                icon: const Icon(Icons.account_circle)),
+                            NeuContainer(
+                              height: 50,
+                              width: 50,
+                              borderWidth: .5,
+                              borderRadius: BorderRadius.circular(4),
+                              child: Image.asset('assets/user 1.png'),
+                            ),
                             const SizedBox(width: 16.0),
                             const Text(
                               "English Course",
@@ -181,35 +292,43 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                         const SizedBox(height: 8.0),
-                        const Row(
+                        Row(
                           children: [
                             Text(
                               '18 lessons',
                               style: TextStyle(
-                                  color: Colors.pink,
+                                  color: Colors.teal.shade600,
                                   fontWeight: FontWeight.w700),
                             ),
-                            SizedBox(width: 8),
+                            const SizedBox(width: 8),
                             Icon(
                               Icons.circle,
                               size: 5,
-                              color: Colors.pink,
+                              color: Colors.teal.shade600,
                             ),
-                            SizedBox(width: 8),
+                            const SizedBox(width: 8),
                             Text(
                               '50% completed',
                               style: TextStyle(
-                                  color: Colors.pink,
+                                  color: Colors.teal.shade600,
+                                  fontWeight: FontWeight.w700),
+                            ),
+                            const Spacer(),
+                            const Text(
+                              '36 lessons',
+                              style: TextStyle(
+                                  color: Colors.black54,
                                   fontWeight: FontWeight.w700),
                             ),
                           ],
                         ),
-                        const SizedBox(height: 4.0),
+                        h8,
                         LinearProgressIndicator(
                           value: .6,
                           backgroundColor: Colors.grey[300],
-                          valueColor:
-                              const AlwaysStoppedAnimation<Color>(Colors.pink),
+                          valueColor: AlwaysStoppedAnimation<Color>(
+                            Colors.teal.shade600,
+                          ),
                           minHeight: 10,
                           semanticsLabel: 'Linear progress indicator',
                         ),
@@ -242,12 +361,15 @@ class _HomeState extends State<Home> {
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: NeuContainer(
-                        borderRadius: BorderRadius.circular(16),
+                        borderRadius: BorderRadius.circular(8),
                         color: Colors.white,
                         child: Column(
                           children: [
-                            Image.network(
-                              musicList[index]['img'],
+                            Image.asset(
+                              index.isEven
+                                  ? 'assets/hs1.png'
+                                  : 'assets/hs2.png',
+                              // : musicList[index]['img'],
                               height: 150,
                               width: 250,
                               fit: BoxFit.cover,
@@ -268,8 +390,8 @@ class _HomeState extends State<Home> {
                                 width: 250,
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 8.0),
-                                child: const Row(
-                                  children: [
+                                child: Row(
+                                  children: const [
                                     Icon(Icons.restore, color: Colors.black54),
                                     SizedBox(width: 8.0),
                                     Expanded(
@@ -320,7 +442,7 @@ class _HomeState extends State<Home> {
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: NeuContainer(
-                        borderRadius: BorderRadius.circular(16),
+                        borderRadius: BorderRadius.circular(8),
                         color: Colors.white,
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
@@ -371,6 +493,7 @@ class _HomeState extends State<Home> {
                   },
                 ),
               ),
+              h24
             ],
           ),
         ),
