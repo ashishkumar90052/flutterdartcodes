@@ -236,3 +236,90 @@ List<Map> newMusicList = [
         'https://m.media-amazon.com/images/M/MV5BZDQ2NzU2MTMtODRlMi00N2I5LThhYmItYWMwODg3MmZiYTJjXkEyXkFqcGdeQXVyMTEyOTYzMjQw._V1_.jpg'
   },
 ];
+
+final List images = [
+  'https://radio.callmefred.com/en/wp-content/uploads/2023/05/final_cover-All-The-Right-Moves-OneRepublic.jpg',
+  'https://c.saavncdn.com/857/Are-You-Lonely-English-2019-20190213200954-500x500.jpg',
+  'https://i1.sndcdn.com/artworks-hHRNAPyoL1gTPNV7-mUwz9A-t500x500.jpg',
+  'https://www.whoa.in/download/raees-shah-rukh-khan-bollywood-movies-poster',
+  'https://i1.sndcdn.com/artworks-l1XLpGzbyQzrqUuW-8ao2yQ-t500x500.jpg',
+  'https://media1.metrotimes.com/metrotimes/imager/u/zoom/29143520/2-sterlgotti-brokenheart.jpg?cb=1647990305',
+  'https://pbs.twimg.com/media/FvUcokBWwAIdldZ.jpg',
+  'https://www.canadalifecentre.ca/wp-content/uploads/2021/07/GV_NATL_0121_TheWeeknd_AfterHours_RogersPlace_525x525.jpg',
+  'https://i1.sndcdn.com/artworks-000075942842-c48doi-t500x500.jpg',
+  'https://i.pinimg.com/originals/67/0a/a0/670aa0f33a730e74e4312417d3ce1af3.jpg',
+  'https://mir-s3-cdn-cf.behance.net/project_modules/hd/067d5068717917.5b672f7514e44.jpg',
+  'https://www.udiscovermusic.com/wp-content/uploads/2021/06/spotify-singles-yungblud-1-820x820.jpg',
+  'https://www.androidauthority.com/wp-content/uploads/2023/02/drake-stock.jpg',
+];
+
+final List<Map> itemg = [
+  {
+    'name': 'Agamemnon',
+    'description':
+        'The old man sat on the bench, watching the children play. He smiled as he remembered a time when he was young and carefree, like them. He had been through a lot in his life, but he had always found a way to keep going. He was a survivor, and he was proud of it.',
+    'image': 'assets/item1.png',
+  },
+  {
+    'name': 'Achilles',
+    'description':
+        'The children were running and laughing, oblivious to the world around them. They were so full of life, and it was contagious. The old man felt his own spirits lift',
+    'image': 'assets/item2.png',
+  },
+  {
+    'name': 'Ferdinand',
+    'description':
+        'They took a deep breath and stepped off the roof, into the storm.',
+    'image': 'assets/item3.png',
+  },
+  {
+    'name': 'Evangeline',
+    'description':
+        'But they knew that they couldn\'t rest yet. There was still work to be done. They had to find a way to stop the storm, before it was too late.',
+    'image': 'assets/item2.png',
+  },
+  {
+    'name': 'Ferdinand',
+    'description':
+        'They took a deep breath and stepped off the roof, into the storm.',
+    'image': 'assets/item3.png',
+  },
+  {
+    'name': 'Delilah',
+    'description':
+        'They had been through a lot in the past few days, and they were starting to feel the strain. They were tired, both physically and emotionally. They just wanted the storm to end, so they could go home and rest.',
+    'image': 'assets/item3.png',
+  },
+
+  {
+    'name': 'Guinevere',
+    'description':
+        'The rain fell in sheets, obscuring the view of the city below. The wind howled, sending debris flying through the air. A lone figure stood on the edge of the roof, looking out at the storm.',
+    'image': 'assets/item2.png',
+  },
+  {
+    'name': 'Elizabeth',
+    'description':
+        'He knew that they would face challenges in their lives, but he also knew that they would overcome them. They were the future, and he was confident that they would make the world a better place.',
+    'image': 'assets/item3.png',
+  },
+  {
+    'name': 'Ferdinand',
+    'description':
+        'They took a deep breath and stepped off the roof, into the storm.',
+    'image': 'assets/item3.png',
+  },
+  {
+    'name': 'Anastasia',
+    'description':
+        'The old man closed his eyes and took a deep breath. The air was filled with the sound of children playing, and it was the most beautiful sound he had ever heard. He knew that he would never forget this moment, and he was grateful for it.',
+    'image': 'assets/item2.png',
+  },
+  {
+    'name': 'Christopher',
+    'description':
+        'The rain fell in sheets, obscuring the view of the city below. The wind howled, sending debris flying through the air. A lone figure stood on the edge of the roof, looking out at the storm.',
+    'image': 'assets/item3.png',
+  },
+  // Add more items as needed
+];

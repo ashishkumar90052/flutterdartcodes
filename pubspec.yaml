@@ -67,6 +67,8 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   flip_card: ^0.7.0
   webview_flutter: ^3.0.4
+  flutter_local_notifications: ^14.1.0
+  geolocator: ^9.0.2
 
 
 

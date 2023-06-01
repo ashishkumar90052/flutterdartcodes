@@ -29,11 +29,11 @@ class CartState extends State<Cart> {
 
   Future openCheckout() async {
     var options = {
-      'key': 'xxxxxxx',
+      'key': 'rzp_test_a4VJwioneew3gY',
       'amount': 28200,
       'name': 'food',
       'description': 'Payment',
-      'prefill': {'contact': '9005243445', 'email': 'test@razorpay.com'},
+      'prefill': {'contact': '9090009010', 'email': 'test@razorpay.com'},
       'external': {
         'wallets': ['paytm']
       }
@@ -62,26 +62,18 @@ class CartState extends State<Cart> {
         msg: "EXTERNAL_WALLET: ${response.walletName}", timeInSecForIosWeb: 4);
   }
 
-
-
-
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
         elevation: 0.0,
         centerTitle: true,
-        title: const Text('Razorpay integation in flutter',
-            style: TextStyle(fontSize: 20.0, color: Color(0xFF545D68))),
+        title: const Text('Razorpay integation in flutter'),
       ),
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(16.0),
         child: SafeArea(
-          child: FilledButton(
+          child: FilledButton.tonal(
               style: FilledButton.styleFrom(padding: const EdgeInsets.all(16)),
               onPressed: () async {
                 await openCheckout();

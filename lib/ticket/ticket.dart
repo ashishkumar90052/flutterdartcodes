@@ -46,8 +46,8 @@ class TicketData extends StatelessWidget {
                 ),
               ),
             ),
-            const Row(
-              children: [
+            Row(
+              children: const [
                 Text(
                   'LHR',
                   style: TextStyle(
