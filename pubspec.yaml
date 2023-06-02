@@ -50,7 +50,6 @@ dependencies:
   motion_toast: ^2.6.4
   blinking_text: ^1.0.2
   awesome_dialog: ^3.0.2
-  image_picker: ^0.8.6+3
   video_player: ^2.5.2
   shimmer: ^2.0.0
   ticket_widget: ^0.0.1
@@ -69,6 +68,10 @@ dependencies:
   webview_flutter: ^3.0.4
   flutter_local_notifications: ^14.1.0
   geolocator: ^9.0.2
+  image_cropper: ^1.4.0
+  image_picker: ^0.8.4+4
+
+
 
 
 

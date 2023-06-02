@@ -7,6 +7,9 @@ PODS:
     - Toast
   - geolocator_apple (1.2.0):
     - Flutter
+  - image_cropper (0.0.4):
+    - Flutter
+    - TOCropViewController (~> 2.6.1)
   - image_picker_ios (0.0.1):
     - Flutter
   - package_info_plus (0.4.5):
@@ -21,6 +24,7 @@ PODS:
   - share_plus (0.0.1):
     - Flutter
   - Toast (4.0.0)
+  - TOCropViewController (2.6.1)
   - video_player_avfoundation (0.0.1):
     - Flutter
   - webview_flutter_wkwebview (0.0.1):
@@ -31,6 +35,7 @@ DEPENDENCIES:
   - flutter_local_notifications (from `.symlinks/plugins/flutter_local_notifications/ios`)
   - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
   - geolocator_apple (from `.symlinks/plugins/geolocator_apple/ios`)
+  - image_cropper (from `.symlinks/plugins/image_cropper/ios`)
   - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
   - package_info_plus (from `.symlinks/plugins/package_info_plus/ios`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/ios`)
@@ -43,6 +48,7 @@ SPEC REPOS:
   trunk:
     - razorpay-pod
     - Toast
+    - TOCropViewController
 
 EXTERNAL SOURCES:
   Flutter:
@@ -53,6 +59,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/fluttertoast/ios"
   geolocator_apple:
     :path: ".symlinks/plugins/geolocator_apple/ios"
+  image_cropper:
+    :path: ".symlinks/plugins/image_cropper/ios"
   image_picker_ios:
     :path: ".symlinks/plugins/image_picker_ios/ios"
   package_info_plus:
@@ -73,6 +81,7 @@ SPEC CHECKSUMS:
   flutter_local_notifications: 0c0b1ae97e741e1521e4c1629a459d04b9aec743
   fluttertoast: eb263d302cc92e04176c053d2385237e9f43fad0
   geolocator_apple: cc556e6844d508c95df1e87e3ea6fa4e58c50401
+  image_cropper: 60c2789d1f1a78c873235d4319ca0c34a69f2d98
   image_picker_ios: 58b9c4269cb176f89acea5e5d043c9358f2d25f8
   package_info_plus: 6c92f08e1f853dc01228d6f553146438dafcd14e
   path_provider_foundation: c68054786f1b4f3343858c1e1d0caaded73f0be9
@@ -80,6 +89,7 @@ SPEC CHECKSUMS:
   razorpay_flutter: 84b3bfd206ae9c9c2a9ba585524a1b3d8102b6c1
   share_plus: 056a1e8ac890df3e33cb503afffaf1e9b4fbae68
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
   video_player_avfoundation: 6d971a232d72e6ee25368378d48a079dea01f1cf
   webview_flutter_wkwebview: b7e70ef1ddded7e69c796c7390ee74180182971f
 
