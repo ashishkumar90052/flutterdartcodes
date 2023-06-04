@@ -58,8 +58,8 @@
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
 	<key>NSPhotoLibraryUsageDescription</key> 
 	<string>Photo Library Access Warning</string>
-	<true/>
 </dict>
 </plist>
