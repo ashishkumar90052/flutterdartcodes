@@ -1,20 +1,25 @@
 import 'package:dynamicapp/allscreens/28.crypto.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(MaterialApp(
+  runApp(GetMaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: ThemeData(
+        colorSchemeSeed: Colors.indigo,
+
         useMaterial3: true,
         brightness: Brightness.light,
+
         // textTheme: GoogleFonts.notoSansTextTheme(),
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
         // textTheme: GoogleFonts.notoSansTextTheme(),
         brightness: Brightness.dark,
+        colorSchemeSeed: Colors.indigo,
       ),
 
       // darkTheme: ThemeData.dark(useMaterial3: true),
