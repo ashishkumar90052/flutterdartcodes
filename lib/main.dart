@@ -2,11 +2,13 @@ import 'package:dynamicapp/allscreens/28.crypto.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'allscreens/30.qr.dart';
+
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       theme: ThemeData(
         colorSchemeSeed: Colors.indigo,
 
@@ -34,5 +36,5 @@ void main() {
       //     },
       // ),
       // ),
-      home: const Crypto()));
+      home: const GenerateQRPage()));
 }
