@@ -1,14 +1,12 @@
-import 'package:dynamicapp/allscreens/28.crypto.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import 'allscreens/30.qr.dart';
+import 'allscreens/1.tab_bar.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
       theme: ThemeData(
         colorSchemeSeed: Colors.indigo,
 
@@ -36,5 +34,5 @@ void main() {
       //     },
       // ),
       // ),
-      home: const GenerateQRPage()));
+      home: const Tabbar()));
 }
