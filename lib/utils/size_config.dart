@@ -9,12 +9,16 @@ const kBlack = Colors.black;
 const kTransparent = Colors.transparent;
 const kWhite = Colors.white;
 const kRed = Colors.red;
+const kWhite54 = Colors.white54;
+const kWhite60 = Colors.white60;
+
 const kWhite70 = Colors.white70;
 const textColor = Color(0xff001c3d);
 const btnColor = Color(0XFFFF9000);
 // const cardColor = Color(0xfff5f6f9);
 const blueButton = Color(0xff0654CE);
 const kBlack12 = Colors.black12;
+const kBlack54 = Colors.black54;
 const kGreen = Colors.green;
 const colorLearn = Color(0xffedf1f7);
 var style = GoogleFonts.inter();
