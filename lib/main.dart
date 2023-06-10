@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'allscreens/1.tab_bar.dart';
+import 'allscreens/29.parallax.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,5 +34,5 @@ void main() {
       //     },
       // ),
       // ),
-      home: const Tabbar()));
+      home: const ParallaxApp()));
 }
