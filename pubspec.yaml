@@ -73,6 +73,7 @@ dependencies:
   readmore: ^2.2.0
   get: ^4.6.5
   qr_flutter: ^4.1.0
+  emoji_picker_flutter: ^1.6.1
    
 
 

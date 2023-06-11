@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'allscreens/29.parallax.dart';
+import 'allscreens/33.android_ios.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       theme: ThemeData(
         colorSchemeSeed: Colors.indigo,
 
@@ -34,5 +34,5 @@ void main() {
       //     },
       // ),
       // ),
-      home: const ParallaxApp()));
+      home: const AndroidvsIos()));
 }
