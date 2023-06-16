@@ -1,6 +1,9 @@
+import 'package:dynamicapp/allscreens/24.animated_theme_switcher.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'allscreens/33.android_ios.dart';
+import 'allscreens/34.download.dart';
+import 'allscreens/35.rive.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,5 +37,5 @@ void main() {
       //     },
       // ),
       // ),
-      home: const AndroidvsIos()));
+      home: const onlinec()));
 }

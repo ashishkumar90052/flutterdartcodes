@@ -14,7 +14,7 @@ class Notifications extends StatelessWidget {
       title: 'Location Notification Demo',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Location Notification Demo'),
+          title: const Text('Location Notification Demo'),
         ),
         body: Center(
           child: TextButton(
@@ -23,7 +23,7 @@ class Notifications extends StatelessWidget {
                   desiredAccuracy: LocationAccuracy.high);
               displayNotification(position);
             },
-            child: Text('Show Location Notification'),
+            child: const Text('Show Location Notification'),
           ),
         ),
       ),
@@ -31,7 +31,7 @@ class Notifications extends StatelessWidget {
   }
 
   void displayNotification(Position position) async {
-    final AndroidNotificationDetails androidPlatformChannelSpecifics =
+    const AndroidNotificationDetails androidPlatformChannelSpecifics =
         AndroidNotificationDetails(
       'your_channel_id', // Replace with your own channel ID
       'Location Notification',
@@ -41,6 +41,7 @@ class Notifications extends StatelessWidget {
     );
 
     final NotificationDetails platformChannelSpecifics =
+        // ignore: prefer_const_constructors
         NotificationDetails(android: androidPlatformChannelSpecifics);
 
     await flutterLocalNotificationsPlugin.show(
