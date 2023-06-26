@@ -22,8 +22,7 @@ class SliverListGridExampleState extends State<SliverListGridExample> {
         slivers: <Widget>[
           SliverAppBar(
             pinned: true,
-            flexibleSpace:
-                const FlexibleSpaceBar(title: Text('Sliver List and Grid')),
+            flexibleSpace: const FlexibleSpaceBar(title: Text('Motion Tabbar')),
             actions: [
               IconButton(
                 tooltip: isGrid ? 'Grid' : 'List',

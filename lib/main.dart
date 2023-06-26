@@ -1,10 +1,7 @@
-import 'package:dynamicapp/allscreens/35.sliverappbar.dart';
-import 'package:dynamicapp/allscreens/37.extended.dart';
+import 'package:dynamicapp/utils/42.motion_tabbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'allscreens/40.reels.dart';
-import 'allscreens/41.internet.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +20,7 @@ void main() {
         useMaterial3: true,
         // textTheme: GoogleFonts.notoSansTextTheme(),
         brightness: Brightness.dark,
-        colorSchemeSeed: Colors.indigo,
+        // colorSchemeSeed: Colors.indigo,
       ),
 
       // darkTheme: ThemeData.dark(useMaterial3: true),
@@ -38,5 +35,5 @@ void main() {
       //     },
       // ),
       // ),
-      home: const FancyAppBar()));
+      home: const MyHomePagee()));
 }

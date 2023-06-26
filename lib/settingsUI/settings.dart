@@ -29,10 +29,9 @@ class _SettingsState extends State<Settings> {
                     'https://storage.googleapis.com/cms-storage-bucket/images/Dash_Phone_Games_v04.width-635.png'),
               ),
               title: Text('Flutter Dart Code', style: title1),
-              subtitle: Text(
-                'Edit Profile',
-                style: subtitle,
-              ),
+              subtitle: const Text('Edit Profile'
+                  // style: subtitle,
+                  ),
               trailing: const Icon(Icons.arrow_forward_ios, size: 18),
             ),
             Container(
