@@ -390,8 +390,8 @@ class _HomeState extends State<Home> {
                                 width: 250,
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 8.0),
-                                child: Row(
-                                  children: const [
+                                child: const Row(
+                                  children: [
                                     Icon(Icons.restore, color: Colors.black54),
                                     SizedBox(width: 8.0),
                                     Expanded(

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 
@@ -12,7 +11,7 @@ class RiveAninmations extends StatefulWidget {
 class _RiveAninmationsState extends State<RiveAninmations> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: RiveAnimation.network(
         'https://cdn.rive.app/animations/vehicles.riv',
       ),

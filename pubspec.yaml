@@ -75,6 +75,12 @@ dependencies:
   qr_flutter: ^4.1.0
   emoji_picker_flutter: ^1.6.1
   rive: 0.9.1
+  better_player: ^0.0.66
+  country_picker: ^2.0.20
+  device_info_plus: 
+  # video_player: ^2.6.1
+  # chewie: ^1.5.0
+  # flutter_swiper: ^1.1.6
    
 
 

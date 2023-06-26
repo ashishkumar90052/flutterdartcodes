@@ -6,10 +6,10 @@ class GenerateQRPage extends StatefulWidget {
   const GenerateQRPage({super.key});
 
   @override
-  _GenerateQRPageState createState() => _GenerateQRPageState();
+  GenerateQRPageState createState() => GenerateQRPageState();
 }
 
-class _GenerateQRPageState extends State<GenerateQRPage> {
+class GenerateQRPageState extends State<GenerateQRPage> {
   TextEditingController controller = TextEditingController();
 
   @override

@@ -22,9 +22,9 @@ class _CryptoState extends State<Crypto> {
           children: [
             Row(
               children: [
-                Column(
+                const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children: [
                     Text(
                       'Welcome',
                       style: TextStyle(
@@ -82,9 +82,9 @@ class _CryptoState extends State<Crypto> {
                       h24,
                       Row(
                         children: [
-                          Column(
+                          const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
+                              children: [
                                 Text(
                                   'Monthly profit',
                                   style: TextStyle(fontSize: 18, color: kWhite),
@@ -146,10 +146,10 @@ class _CryptoState extends State<Crypto> {
                             h24,
                             Row(
                               children: [
-                                Column(
+                                const Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
-                                    children: const [
+                                    children: [
                                       Text(
                                         'Portfolio',
                                         style: TextStyle(

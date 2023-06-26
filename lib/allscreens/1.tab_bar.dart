@@ -43,7 +43,7 @@ class _TabbarState extends State<Tabbar> {
           userdata = response.data;
         });
       }
-    } on DioError catch (e) {
+    } on DioException catch (e) {
       debugPrint(e.message);
     }
   }

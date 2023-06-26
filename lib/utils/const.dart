@@ -50,6 +50,57 @@ List<Map> musicList = [
     'img':
         'https://media1.metrotimes.com/metrotimes/imager/u/zoom/29143520/2-sterlgotti-brokenheart.jpg?cb=1647990305'
   },
+  {
+    'title': 'Ilzaam',
+    'img': 'https://i.scdn.co/image/ab67616d0000b27336fb92e4fd4da9df2afaa2d2'
+  },
+  {
+    'title': 'O Bedardeya',
+    'img':
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVbMRddA-HnTdv8EVilu0uYDJ9UyfGd3DtNtMmUdC4nQ&usqp=CAU&ec=48600113'
+  },
+  {
+    'title': 'Subah Hone na De',
+    'img': 'https://i.scdn.co/image/ab67616d0000b273daa89593cc2cde9651665d03'
+  },
+  {
+    'title': 'Players',
+    'img': 'https://mastinew.com/siteuploads/thumb/c/2798_resize2x_200x200.webp'
+  },
+  {
+    'title': 'GodSpeed',
+    'img':
+        'https://c.saavncdn.com/532/GODSPEED-Punjabi-2022-20220623172310-500x500.jpg'
+  },
+  {
+    'title': 'Na Ja',
+    'img': 'https://c.saavncdn.com/638/Na-Ja-Punjabi-2017-500x500.jpg'
+  },
+  {
+    'title': 'Kalank',
+    'img':
+        'https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2023/03/ab67616d0000b27341775aba5e8dc068274257cc-photoutils.com_.jpeg?ssl=1'
+  },
+  {
+    'title': 'Woofer',
+    'img':
+        'https://m.media-amazon.com/images/M/MV5BZDQ2NzU2MTMtODRlMi00N2I5LThhYmItYWMwODg3MmZiYTJjXkEyXkFqcGdeQXVyMTEyOTYzMjQw._V1_.jpg'
+  },
+  {
+    'title': 'God\'s Plan',
+    'img':
+        'https://www.androidauthority.com/wp-content/uploads/2023/02/drake-stock.jpg'
+  },
+  {
+    'title': 'YUNGBLUD',
+    'img':
+        'https://www.udiscovermusic.com/wp-content/uploads/2021/06/spotify-singles-yungblud-1-820x820.jpg'
+  },
+  {
+    'title': 'Jungle Baby',
+    'img':
+        'https://media1.metrotimes.com/metrotimes/imager/u/zoom/29143520/2-sterlgotti-brokenheart.jpg?cb=1647990305'
+  },
 ];
 
 List<Map> dataList = [

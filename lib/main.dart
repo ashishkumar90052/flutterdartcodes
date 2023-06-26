@@ -1,18 +1,19 @@
-import 'package:dynamicapp/allscreens/24.animated_theme_switcher.dart';
+import 'package:dynamicapp/allscreens/35.sliverappbar.dart';
+import 'package:dynamicapp/allscreens/37.extended.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'allscreens/33.android_ios.dart';
-import 'allscreens/34.download.dart';
-import 'allscreens/35.rive.dart';
+import 'allscreens/40.reels.dart';
+import 'allscreens/41.internet.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack);
+
   runApp(GetMaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       theme: ThemeData(
-        colorSchemeSeed: Colors.indigo,
-
         useMaterial3: true,
         brightness: Brightness.light,
 
@@ -37,5 +38,5 @@ void main() {
       //     },
       // ),
       // ),
-      home: const onlinec()));
+      home: const FancyAppBar()));
 }
